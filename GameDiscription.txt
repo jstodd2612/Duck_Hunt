@@ -1,0 +1,1 @@
+A Spaceship flies through rings and dodges debris obstacles. Working with Braydon on this and he is tutoring me on scripting at the same time.
