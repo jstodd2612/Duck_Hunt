@@ -1,0 +1,5 @@
+Author: Braydon Powell
+
+Language C#
+
+I am making a game, which involves flying a space ship through a course of rings and space debris. Each ring you fly through gives you points, colliding with rings or debris will damage your ship and kill you. The objective is to get through the course as quickly as possible without killing yourself.
