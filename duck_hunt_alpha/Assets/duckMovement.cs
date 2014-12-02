@@ -39,5 +39,9 @@ public class duckMovement : MonoBehaviour {
 		if (transform.position.y >= Ymax || transform.position.y <= Ymin) {
 			Yrandom = -Yrandom;
 		}
+
+		if (shots.gunshots <= 0){
+			Yrandom = 10;
+		}
 }
 }
