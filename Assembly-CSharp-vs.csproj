@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\scripts\gui\score.cs" />
      <Compile Include="Assets\scripts\movement\duckDie.cs" />
      <Compile Include="Assets\scripts\movement\duckFly.cs" />
   </ItemGroup>
