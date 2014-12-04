@@ -2,12 +2,20 @@
 using System.Collections;
 
 public class duckswitch1 : MonoBehaviour {
-	public Animation deadduck;
-	
-	void OnMouseDown () {
-		Destroy (gameObject);
-		animation.Play ("deadduck");//doesn't work
+
+	public float speed = .5f;
+	public bool direction = false;
+
+	void Start () {
+				direction = (Random.value < .5);
+		}
+
+	void Update () {
+			if (direction) {
+						transform.position += new Vector3 (speed, speed);
+				}else{
+			transform.position += new Vector3 (speed * -1, speed);
+		}
 	}
 }
 
-/*I can't figure out how to make the dead duck animation show up after you click the duck*/

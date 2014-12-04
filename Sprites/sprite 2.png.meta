@@ -3,6 +3,9 @@ guid: ecbeed173e66f6a4bb2edbdcd7945941
 TextureImporter:
   fileIDToRecycleName:
     21300000: sprite 2_0
+    21300002: sky
+    21300004: left
+    21300006: right
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -50,6 +53,36 @@ TextureImporter:
         x: 0
         y: 0
         width: 1280
+        height: 769
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sky
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 756
+        width: 1280
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: left
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 8
+        height: 769
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: right
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 0
+        width: 9
         height: 769
       alignment: 0
       pivot: {x: .5, y: .5}
