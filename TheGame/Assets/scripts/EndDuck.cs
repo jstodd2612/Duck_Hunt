@@ -8,6 +8,7 @@ public class EndDuck : MonoBehaviour {
 
 
 	void OnTriggerEnter2D(Collider2D _c) {
+		Debug.Log ("0");
 		Dog.SetBool (dogAnimState, true);
 
 	}
