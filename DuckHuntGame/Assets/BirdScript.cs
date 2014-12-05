@@ -4,27 +4,42 @@ using UnityEngine.UI;
 
 public class BirdScript: MonoBehaviour {
 
-public int score;
-public Text scoreText;
+	public float speed = .05f;
+	public bool direction = false;
+
+
+
+	public int score;
+	public Text scoreText;
 	public GameObject Bird;
 
-void Start() {
-	score = 0;
-	UpdateScore ();
+	void Start() {
+		score = 0;
+		direction = (Random.value < .5);
+	}
 
-}
-
-
+	void Update (){
+		if (direction) {
+			transform.position += new Vector3 (speed, speed);
+		} 
+		else {
+			transform.position += new Vector3 (speed * -1, speed);
+		}
+		}
+	
 	void OnMouseDown () {
-		//Destroy (gameObject);
-		score += 10;
 		UpdateScore ();
-		Bird.SetActive (false);
+		Object.Destroy (Bird);
 	}
 
 
 
-void UpdateScore(){
-	scoreText.text = "Score:" + score;
-}
+	void UpdateScore(){
+		score += 10;
+		scoreText.text = "Score:" + score;
+	}
+
+	void OnTriggerEnter2D (){
+		Destroy (Bird);
+		}
 }
