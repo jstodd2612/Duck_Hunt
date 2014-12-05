@@ -1,8 +1,7 @@
 fileFormatVersion: 2
-guid: 4607ad4a3a1c347b09b77233f9dfad25
+guid: 07edbd444e5bb46dea051284b78693a5
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Duck-Hunt-h_0
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -43,16 +42,6 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: Duck-Hunt-h_0
-      rect:
-        serializedVersion: 2
-        x: 83
-        y: 165
-        width: 239
-        height: 352
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+    sprites: []
   spritePackingTag: 
   userData: 

@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 0dfd1ea102a7449348c175287b8ed749
+guid: 03155966296fe4daaae725004cd7ff80
 TextureImporter:
   fileIDToRecycleName:
-    21300000: duckhunt_various_sheet_0
-    21300002: duckhunt_various_sheet_1
-    21300004: duckhunt_various_sheet_2
-    21300006: duckhunt_various_sheet_3
-    21300008: duckhunt_various_sheet_4
-    21300010: duckhunt_various_sheet_5
+    21300000: duckhunt_various_sheet 1_0
+    21300002: duckhunt_various_sheet 1_1
+    21300004: duckhunt_various_sheet 1_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -49,63 +46,33 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: duckhunt_various_sheet_0
+    - name: duckhunt_various_sheet 1_0
       rect:
         serializedVersion: 2
         x: 129
-        y: 121
-        width: 36
-        height: 26
+        y: 118
+        width: 40
+        height: 31
       alignment: 0
       pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 5}
-    - name: duckhunt_various_sheet_1
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: duckhunt_various_sheet 1_1
       rect:
         serializedVersion: 2
         x: 169
         y: 122
-        width: 35
-        height: 23
+        width: 38
+        height: 27
       alignment: 0
       pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 4}
-    - name: duckhunt_various_sheet_2
+      border: {x: 0, y: 0, z: 3, w: 0}
+    - name: duckhunt_various_sheet 1_2
       rect:
         serializedVersion: 2
         x: 210
-        y: 119
-        width: 34
-        height: 30
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: duckhunt_various_sheet_3
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 223
-        width: 54
-        height: 42
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: duckhunt_various_sheet_4
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 157
-        width: 52
-        height: 52
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: duckhunt_various_sheet_5
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 165
-        width: 40
-        height: 43
+        y: 121
+        width: 35
+        height: 26
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
