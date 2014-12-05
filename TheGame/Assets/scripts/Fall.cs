@@ -14,9 +14,9 @@ public class Fall : MonoBehaviour {
 		transform.position += new Vector3 (0, -fallSpeed, 0);
 	}
 
-	/*void OnTriggerEnter2D(Collider2D _c) {
+	void OnTriggerEnter2D(Collider2D _c) {
 		if (_c.tag == "DuckEnder") {
 			Object.Destroy(this.gameObject);
 		} 
-	}*/
+	}
 }

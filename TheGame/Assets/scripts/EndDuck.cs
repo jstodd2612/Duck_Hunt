@@ -3,9 +3,13 @@ using System.Collections;
 
 public class EndDuck : MonoBehaviour {
 
-	public virtual void OnTriggerEnter2D(Collider2D _c) {
+	public Animator Dog;
+	public string dogAnimState = "miss";
 
-		Object.Destroy (_c.gameObject);
+
+	void OnTriggerEnter2D(Collider2D _c) {
+		Dog.SetBool (dogAnimState, true);
+
 	}
 
 }
