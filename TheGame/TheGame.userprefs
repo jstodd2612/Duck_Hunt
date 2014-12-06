@@ -1,10 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\ResetAnimState.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\EndDuck.cs">
     <Files>
+      <File FileName="Assets\scripts\EndDuck.cs" Line="10" Column="36" />
       <File FileName="Assets\scripts\Fall.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\EndDuck.cs" Line="17" Column="1" />
-      <File FileName="Assets\scripts\ResetAnimState.cs" Line="15" Column="30" />
+      <File FileName="Assets\scripts\ResetAnimState.cs" Line="10" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
