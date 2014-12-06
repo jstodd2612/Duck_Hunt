@@ -6,10 +6,9 @@ public class EndDuck : MonoBehaviour {
 	public Animator Dog;
 	public ResetAnimState myAnim;
 	public string dogAnimState = "miss";
-	
+
 	void OnTriggerEnter2D(Collider2D _c) {
-		Debug.Log ("0");
-		myAnim.Dog.SetBool (dogAnimState, true);
+			myAnim.Dog.SetBool (dogAnimState, true);
 	}
 
 }

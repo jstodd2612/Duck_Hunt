@@ -12,6 +12,10 @@ public class GeneratorCl : MonoBehaviour {
 			currentTime = Time.time + nextTime;
 			Object.Instantiate(newDuck);
 		}
+		/* if (currentTime >= 10.0f) {
+			nextTime = 0;
+			Time.timeScale = 0.0f;
+		} */
 
 	}
 

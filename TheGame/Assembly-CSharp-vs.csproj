@@ -57,6 +57,9 @@
      <Compile Include="Assets\scripts\GeneratorCl.cs" />
      <Compile Include="Assets\scripts\ResetAnimState.cs" />
      <Compile Include="Assets\scripts\StaticVars.cs" />
+     <Compile Include="Assets\scripts\UpdateAmmo.cs" />
+     <Compile Include="Assets\scripts\UpdateDucks.cs" />
+     <Compile Include="Assets\scripts\UpdateScore.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>

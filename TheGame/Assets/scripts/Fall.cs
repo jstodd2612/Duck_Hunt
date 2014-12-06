@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Fall : MonoBehaviour {
 	
-	public float fallSpeed = 0.10f;
+	public float fallSpeed = 0.07f;
 	// Use this for initialization
 	void Start () {
 	
@@ -16,7 +16,6 @@ public class Fall : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D _c) {
 		if (_c.tag == "DuckEnder") {
-			Debug.Log("1");
 			Object.Destroy(this.gameObject);
 		} 
 	}
