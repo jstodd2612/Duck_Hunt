@@ -46,20 +46,20 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\scripts\Dog\ResetAnimState.cs" />
      <Compile Include="Assets\scripts\DogAI.cs" />
+     <Compile Include="Assets\scripts\Duck\DuckFly.cs" />
+     <Compile Include="Assets\scripts\Duck\Fall.cs" />
+     <Compile Include="Assets\scripts\Duck\FallDeath.cs" />
+     <Compile Include="Assets\scripts\Duck\Fly.cs" />
      <Compile Include="Assets\scripts\DuckAI.cs" />
-     <Compile Include="Assets\scripts\DuckFly.cs" />
-     <Compile Include="Assets\scripts\EndDuck.cs" />
-     <Compile Include="Assets\scripts\Fall.cs" />
-     <Compile Include="Assets\scripts\FallDeath.cs" />
-     <Compile Include="Assets\scripts\Fly.cs" />
      <Compile Include="Assets\scripts\FlySimple.cs" />
-     <Compile Include="Assets\scripts\GeneratorCl.cs" />
-     <Compile Include="Assets\scripts\ResetAnimState.cs" />
-     <Compile Include="Assets\scripts\StaticVars.cs" />
-     <Compile Include="Assets\scripts\UpdateAmmo.cs" />
-     <Compile Include="Assets\scripts\UpdateDucks.cs" />
-     <Compile Include="Assets\scripts\UpdateScore.cs" />
+     <Compile Include="Assets\scripts\General\EndDuck.cs" />
+     <Compile Include="Assets\scripts\General\GeneratorCl.cs" />
+     <Compile Include="Assets\scripts\General\StaticVars.cs" />
+     <Compile Include="Assets\scripts\General\UpdateAmmo.cs" />
+     <Compile Include="Assets\scripts\General\UpdateDucks.cs" />
+     <Compile Include="Assets\scripts\General\UpdateScore.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>
