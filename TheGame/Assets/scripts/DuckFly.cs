@@ -21,7 +21,6 @@ public class DuckFly : MonoBehaviour {
 			transform.position += new Vector3 (velocitySpeed, flyUpSpeed, 0);
 		} else {
 			transform.position += new Vector3(velocitySpeed * -1, flyUpSpeed, 0);
-			// transform.LookAt(target2);
 		}
 	}
 
