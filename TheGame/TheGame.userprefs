@@ -1,13 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\UpdateScore.cs">
     <Files>
+      <File FileName="Assets\scripts\UpdateDucks.cs" Line="1" Column="1" />
       <File FileName="Assets\scripts\UpdateScore.cs" Line="16" Column="1" />
-      <File FileName="Assets\scripts\UpdateAmmo.cs" Line="10" Column="22" />
-      <File FileName="Assets\scripts\StaticVars.cs" Line="8" Column="15" />
-      <File FileName="Assets\scripts\FallDeath.cs" Line="22" Column="5" />
-      <File FileName="Assets\scripts\GeneratorCl.cs" Line="15" Column="7" />
-      <File FileName="Assets\scripts\UpdateDucks.cs" Line="13" Column="5" />
+      <File FileName="Assets\scripts\UpdateAmmo.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\StaticVars.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\FallDeath.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\GeneratorCl.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
