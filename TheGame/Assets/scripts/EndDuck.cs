@@ -7,6 +7,7 @@ public class EndDuck : MonoBehaviour {
 	public string dogAnimState = "miss";
 
 	void OnTriggerEnter2D(Collider2D _c) {
+		Debug.Log ("0");
 		Dog.SetBool (dogAnimState, true);
 	}
 

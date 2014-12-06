@@ -16,6 +16,7 @@ public class Fall : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D _c) {
 		if (_c.tag == "DuckEnder") {
+			Debug.Log("1");
 			Object.Destroy(this.gameObject);
 		} 
 	}

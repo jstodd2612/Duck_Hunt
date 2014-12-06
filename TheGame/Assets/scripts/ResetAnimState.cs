@@ -10,7 +10,7 @@ public class ResetAnimState : MonoBehaviour {
 		Dog = GetComponent<Animator> ();
 	}
 
-	void ResetState() {;
+	void ResetState() {
 		Dog.SetBool ("miss", false);
 		Dog.SetBool ("hit", false);
 	}
