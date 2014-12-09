@@ -8,17 +8,9 @@ public class Score : MonoBehaviour {
 	public Text scoreText;
 	
 	// Use this for initialization
-	void Start () {
-		StaticVars.gameScore = 0;
-	}
-	
-	void OnMouseDown (){
-		UpdateScore ();
-	}
-	// Update is called once per frame
-	void UpdateScore () {
-		StaticVars.gameScore += 10;
-		scoreText.text = "Score" + StaticVars.gameScore;
+	void Update () {
+		scoreText.text = "Score: " + StaticVars.gameScore;
 	}
 }
+
 
