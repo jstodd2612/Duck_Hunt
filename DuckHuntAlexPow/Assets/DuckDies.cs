@@ -10,7 +10,7 @@ public class DuckDies : MonoBehaviour {
 		}
 
 	void OnTriggerEnter () {
-		Destroy (this.gameObject);
+		Destroy (gameObject);
 
 	}
 	
