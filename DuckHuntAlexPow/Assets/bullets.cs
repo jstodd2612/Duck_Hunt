@@ -3,17 +3,9 @@ using System.Collections;
 
 public class bullets : MonoBehaviour
 {
-
-		// Use this for initialization
-		void Start ()
-		{
-	
-		}
-	
-		// Update is called once per frame
-		void Update ()
-		{
-	
-		}
+	//3 bullets for each duck 
+	//static bullets
+	//reset for each new duck 
+	public static int bulletsPerDuck = 3; 
 }
 
