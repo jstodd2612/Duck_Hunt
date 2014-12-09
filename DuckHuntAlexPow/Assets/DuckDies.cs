@@ -9,7 +9,7 @@ public class DuckDies : MonoBehaviour {
 
 		}
 
-	void OnTriggerEnter () {
+	void OnTriggerEnter2D (Collider2D other) {
 		Destroy (gameObject);
 
 	}
