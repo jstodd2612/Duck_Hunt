@@ -3,42 +3,39 @@ using System.Collections;
 
 public class dogCatch : MonoBehaviour
 {
-	private GameObject dogPositionCatch;
+	public GameObject dogPositionCatch;
 	public bool dogActivated = false;
 	public bool dogPositioned = false;
 	public float position = 0.0f;
+	public Animator animDog;
+	public static dogCatch myDog;
+	
+
 
 
 	// Use this for initialization
 	void Start ()
 	{
+		dogCatch.myDog = this;
 		dogPositionCatch = GameObject.FindWithTag ("dogCatchTag");
+		animDog = GetComponent<Animator>();
+		animDog.SetBool("duckIsDead", false);
 	}
 
 	// Update is called once per frame
 	void Update ()
 	{
-		if (duckMovement.duck.transform.position.y < -4.0f){
-			moveDogCatch();
-		}
+
 	}
 	
 	//position = DogPositioning.positionDog();
 	
-	void moveDogCatch(){
-		if (dogPositioned == false) {
-			position = DogPositioning.positionDog();
-			transform.position = new Vector2 (position, -2.8f);
-			dogPositioned = true;
-		}
+	public void runDogCatchAnim(){
+		animDog.SetBool ("duckIsDead", true);
+	}
 
-		if(dogActivated == false) {
-			transform.Translate (new Vector2 (0.0f, 1.85f) * Time.deltaTime);
-
-			//Stops dog from going up into the screen
-			if(dogPositionCatch.transform.position.y > -1.9f){
-				dogActivated = true;
-			}
-		}
+	public void moveDogCatch(){
+		position = DogPositioning.positionDog();
+		dogCatch.myDog.transform.position = new Vector2 (position, -2.8f);
 	}
 }
