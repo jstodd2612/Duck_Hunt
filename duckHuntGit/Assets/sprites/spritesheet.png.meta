@@ -1,0 +1,183 @@
+fileFormatVersion: 2
+guid: 50b9eabae6d42f04f9367dd15dbcc8d7
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spritesheet
+    21300002: duck_diagonal1
+    21300004: duck_diagonal2
+    21300006: duck_diagonal3
+    21300008: Duck_Diagonal1
+    21300010: Duck_Diagonal2
+    21300012: Duck_Diagonal3
+    21300014: duck_straight1
+    21300016: duck_straight2
+    21300018: duck_straight3
+    21300020: duck_die
+    21300022: duck_fall
+    21300024: dog_laugh_1
+    21300026: dog_laugh_2
+    21300028: dog_catch
+    21300030: spritesheet_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Duck_Diagonal1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 115
+        width: 80
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Duck_Diagonal2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 115
+        width: 80
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Duck_Diagonal3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 115
+        width: 80
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: duck_straight1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 115
+        width: 90
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: duck_straight2
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 115
+        width: 90
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: duck_straight3
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 115
+        width: 90
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: duck_die
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 21
+        width: 80
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: duck_fall
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 22
+        width: 80
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dog_laugh_1
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 0
+        width: 70
+        height: 95
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dog_laugh_2
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 0
+        width: 70
+        height: 95
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dog_catch
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 0
+        width: 100
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 8
+        width: 80
+        height: 85
+      alignment: 9
+      pivot: {x: .610023141, y: .38905248}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
