@@ -3,22 +3,22 @@ using System.Collections;
 
 public class shots : MonoBehaviour {
 
-	static public int gunshots = 3;
+
 
 	void Start(){
 		//Physics.IgnoreCollision();
 	}
 
 	void OnMouseDown(){
-		if (gunshots > 0 && killDuck.isDead != true) { 
-			gunshots = gunshots - 1;
+		if (StaticVars.bullets > 0 && StaticVars.duckIsDead != true) { 
+			StaticVars.bullets = StaticVars.bullets - 1;
 		}
 
 	}
 
 	void Update(){
 
-		if(gunshots <= 0){
+		if(StaticVars.bullets <= 0){
 			killDuck.flyAway();
 
 		}

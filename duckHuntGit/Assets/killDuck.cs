@@ -1,15 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using AssemblyCSharp;
 
 public class killDuck : MonoBehaviour {
 
-	public const int scoreIncrease = 1000;
-	static public bool isDead = false;
-	static public int score = 0;
 	private Animator anim;
 	static public float duckPosition = 0.0f;
 	static public GameObject dogPositionCatch;
-
+	private bool duckKilled = false;
 
 	void Start()
 	{
@@ -20,18 +19,18 @@ public class killDuck : MonoBehaviour {
 
 	void OnMouseDown()
 	{
-		if (isDead != true) {
-			score = score + scoreIncrease;
+		if (StaticVars.duckIsDead != true) {
+			StaticVars.gameScore = StaticVars.gameScore +  Constants.scoreIncrease;
 		}
 
-		if (shots.gunshots > 0 && isDead != true) { 
-			shots.gunshots = shots.gunshots - 1;
+		if (StaticVars.bullets > 0 && StaticVars.duckIsDead != true) { 
+			StaticVars.bullets = StaticVars.bullets - 1;
 		}
 
 		duckPosition = duckMovement.duck.transform.position.x;
 		dogCatch.myDog.moveDogCatch();
 
-		isDead = true;
+		StaticVars.duckIsDead = true;
 		anim.SetBool("isDead", true);
 
 
@@ -39,7 +38,7 @@ public class killDuck : MonoBehaviour {
 
 	void resetStage()
 	{
-		isDead = false;
+		StaticVars.duckIsDead = false;
 	}
 
 	static public void flyAway()
@@ -48,14 +47,24 @@ public class killDuck : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D coll){
-		if (coll.gameObject.tag == "baseCollider") {
-			duckMovement.duck.SetActive(false);
-			dogCatch.myDog.runDogCatchAnim();
-			Debug.Log ("Message: Duck Collision");
+		try{
+			if (coll.gameObject.tag == "baseCollider") {
+				duckKilled = true;
+				duckMovement.duck.SetActive(false);
+				dogCatch.myDog.runDogCatchAnim();
+				Debug.Log ("Message: Duck Collision");
+				LoadMyGameLevel.Timer(duckKilled);
+			}
+			if (coll.gameObject.tag == "topCollider") {
+				duckMovement.duck.SetActive(false);
+				dogLaugh.myLaughDog.animLaughDog.SetBool("duckFlyAway", true);
+				LoadMyGameLevel.Timer(duckKilled);
+			}
+
 		}
-		if (coll.gameObject.tag == "topCollider") {
-			duckMovement.duck.SetActive(false);
-			dogLaugh.myLaughDog.animLaughDog.SetBool("duckFlyAway", true);
+		catch (UnityException e)
+		{
+			Debug.Log("Error: " + e.Message);
 		}
 	}
 

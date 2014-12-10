@@ -3,8 +3,6 @@ using System.Collections;
 
 public class DogPositioning : MonoBehaviour
 {
-
-	public const float dogCorrection = 0.75f;
 	public const float dogStartPosition_Y = -2.8f;
 	const float treeCenter = -2.3f;
 	const float treeRight = -1.8f;
@@ -19,27 +17,23 @@ public class DogPositioning : MonoBehaviour
 		//If Duck falls in the tree area
 		if(killDuck.duckPosition < 0){
 			if(killDuck.duckPosition < treeCenter && killDuck.duckPosition > treeLeft){
-				return killDuck.duckPosition - dogCorrection;
+				return treeLeft;
 			}
 			else if(killDuck.duckPosition < treeRight && killDuck.duckPosition > treeCenter){
-				return killDuck.duckPosition + dogCorrection;
+				return treeRight;
 			}
 		}
 
 		//If Duck falls in the bush area
 		if(killDuck.duckPosition > 0){
 			if(killDuck.duckPosition < bushCenter && killDuck.duckPosition > bushLeft){
-				return killDuck.duckPosition - dogCorrection;
+				return bushLeft;
 			}
 			else if(killDuck.duckPosition < bushRight && killDuck.duckPosition > bushCenter){
-				return killDuck.duckPosition + dogCorrection;
+				return bushRight;
 			}
-		}	
+		}
+		Debug.Log("positionDog() line 38 No correction needed for position;");
 		return killDuck.duckPosition;
 	}
-
-
 }
-		
-
-

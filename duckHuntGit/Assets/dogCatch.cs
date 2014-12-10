@@ -4,19 +4,16 @@ using System.Collections;
 public class dogCatch : MonoBehaviour
 {
 	public GameObject dogPositionCatch;
-	public bool dogActivated = false;
-	public bool dogPositioned = false;
+	public GameObject dogLeash;
 	public float position = 0.0f;
 	public Animator animDog;
 	public static dogCatch myDog;
-	
-
-
 
 	// Use this for initialization
 	void Start ()
 	{
 		dogCatch.myDog = this;
+		dogLeash = GameObject.FindWithTag ("dogLeashTag");
 		dogPositionCatch = GameObject.FindWithTag ("dogCatchTag");
 		animDog = GetComponent<Animator>();
 		animDog.SetBool("duckIsDead", false);
@@ -36,6 +33,7 @@ public class dogCatch : MonoBehaviour
 
 	public void moveDogCatch(){
 		position = DogPositioning.positionDog();
-		dogCatch.myDog.transform.position = new Vector2 (position, -2.8f);
+		dogPositionCatch.transform.position = new Vector2 (position, -2.8f);
+		Debug.Log ("moveDogCatch() in dogCatch line 38, moved dog");
 	}
 }
