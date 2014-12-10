@@ -10,13 +10,17 @@ public class shots : MonoBehaviour {
 	}
 
 	void OnMouseDown(){
-		gunshots = gunshots - 1;
+		if (gunshots > 0 && killDuck.isDead != true) { 
+			gunshots = gunshots - 1;
+		}
+
 	}
 
 	void Update(){
 
 		if(gunshots <= 0){
 			killDuck.flyAway();
+
 		}
 
 	}

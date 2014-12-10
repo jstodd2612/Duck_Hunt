@@ -3,15 +3,24 @@ using System.Collections;
 
 public class duckMovement : MonoBehaviour {
 
-	public float Xmax = 4.5f;
-	public float Xmin = -4.5f;
-	public float Ymin = -1.5f;
-	public float Ymax = 2.7f;
+	static public GameObject duck;
+	public GameObject flyAwayBanner;
+
+	public float Xmax = 3.8f;
+	public float Xmin = -3.8f;
+	public float Ymin = -1.6f;
+	public float Ymax = 3.0f;
 	public int moveSpeed = 1;
 
 	private float firstDirection = 0.0f;
 	private float Xrandom;
 	private float Yrandom;
+
+	void Start(){
+		duck = GameObject.FindWithTag ("duckTag");
+		flyAwayBanner = GameObject.FindWithTag ("flyAwayTag");
+		flyAwayBanner.SetActive (false);
+	}
 
 	void Update(){
 		if (killDuck.isDead == false){
@@ -23,12 +32,12 @@ public class duckMovement : MonoBehaviour {
 	}
 
 	void randomMovement() {
-		if(Time.deltaTime >= firstDirection){
+		if(Time.time >= firstDirection){
 
 			Xrandom = Random.Range (-2.0f, 2.0f);
 			Yrandom = Random.Range (-2.0f, 2.0f);
 
-			firstDirection = Time.deltaTime + Random.Range (0.5f, 1.5f);
+			firstDirection = Time.time + Random.Range (0.5f, 1.5f);
 			}
 
 		transform.Translate(new Vector3(Xrandom,Yrandom,0.0f) * moveSpeed * Time.deltaTime);
@@ -40,8 +49,9 @@ public class duckMovement : MonoBehaviour {
 			Yrandom = -Yrandom;
 		}
 
-		if (shots.gunshots <= 0){
+		if (shots.gunshots == 0){
 			Yrandom = 10;
+			flyAwayBanner.SetActive(true);
 		}
-}
+	}
 }

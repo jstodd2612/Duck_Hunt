@@ -3,28 +3,67 @@ using System.Collections;
 
 public class killDuck : MonoBehaviour {
 
-	static public bool isDead = false;
-	static public int scores = 0;
-	private Animator anim;
 	public const int scoreIncrease = 1000;
+	static public bool isDead = false;
+	static public int score = 0;
+	private Animator anim;
+	static public float duckPosition = 0.0f;
+	static public GameObject dogPositionCatch;
 
 
-	void Start(){
+	void Start()
+	{
+		dogPositionCatch = GameObject.FindWithTag ("dogCatchTag");
 		anim = GetComponent<Animator>();
 		anim.SetBool("isDead", false);
 	}
 
-	void OnMouseDown(){
+	void OnMouseDown()
+	{
+		if (isDead != true) {
+			score = score + scoreIncrease;
+		}
+
+		if (shots.gunshots > 0 && isDead != true) { 
+			shots.gunshots = shots.gunshots - 1;
+		}
+
+		duckPosition = duckMovement.duck.transform.position.x;
+
 		isDead = true;
 		anim.SetBool("isDead", true);
-		scores = scores + scoreIncrease;
-		shots.gunshots = shots.gunshots - 1;
+
 	}
 
-	void resetStage(){
+	void resetStage()
+	{
 		isDead = false;
 	}
-	static public void flyAway(){
+
+	static public void flyAway()
+	{
+		//Debug.Log("Fly away.");
+	}
+
+	void OnCollisionEnter2D(Collision2D coll){
+		if (coll.gameObject.tag == "baseCollider") {
+			duckMovement.duck.SetActive(false);
+			dogCatch.myDog.moveDogCatch();
+			Debug.Log ("Message: Duck Collision");
+		}
+		if (coll.gameObject.tag == "topCollider") {
+			duckMovement.duck.SetActive(false);
+			dogLaugh.myLaughDog.animLaughDog.SetBool("duckIsDead", true);
+		}
+
 
 	}
+
+	/*
+	void OnDestroy(){
+		//position = DogPositioning.positionDog();
+		dogCatch.dogPositionCatch.transform.Translate(new Vector2(DogPositioning.positionDog(), 1.85f) * Time.deltaTime);
+		Debug.Log ("AM I destroyed");
+	}
+	*/
 }
