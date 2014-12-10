@@ -4,7 +4,7 @@ using System.Collections;
 public class duckMovement : MonoBehaviour {
 
 	static public GameObject duck;
-	static public GameObject flyAwayBanner;
+	public GameObject flyAwayBanner;
 
 	public float Xmax = 3.8f;
 	public float Xmin = -3.8f;
@@ -49,7 +49,7 @@ public class duckMovement : MonoBehaviour {
 			Yrandom = -Yrandom;
 		}
 
-		if (shots.gunshots <= 0){
+		if (shots.gunshots == 0){
 			Yrandom = 10;
 			flyAwayBanner.SetActive(true);
 		}

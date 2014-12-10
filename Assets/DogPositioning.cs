@@ -4,7 +4,8 @@ using System.Collections;
 public class DogPositioning : MonoBehaviour
 {
 
-	static public float dogCorrection = 0.75f;
+	public const float dogCorrection = 0.75f;
+	public const float dogStartPosition_Y = -2.8f;
 	const float treeCenter = -2.3f;
 	const float treeRight = -1.8f;
 	const float treeLeft = -2.8f;
@@ -35,7 +36,8 @@ public class DogPositioning : MonoBehaviour
 		}	
 		return killDuck.duckPosition;
 	}
-		
+
+
 }
 		
 
