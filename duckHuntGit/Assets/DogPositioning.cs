@@ -35,5 +35,9 @@ public class DogPositioning : MonoBehaviour
 		}
 		Debug.Log("positionDog() line 38 No correction needed for position;");
 		return killDuck.duckPosition;
+
+
 	}
+
+
 }

@@ -1,0 +1,19 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\killDuck.cs">
+    <Files>
+      <File FileName="Assets\dogCatch.cs" Line="28" Column="37" />
+      <File FileName="Assets\DogPositioning.cs" Line="14" Column="30" />
+      <File FileName="Assets\dogLaugh.cs" Line="22" Column="2" />
+      <File FileName="Assets\gui.cs" Line="1" Column="1" />
+      <File FileName="Assets\duckMovement.cs" Line="6" Column="9" />
+      <File FileName="Assets\shots.cs" Line="16" Column="3" />
+      <File FileName="Assets\killDuck.cs" Line="51" Column="42" />
+      <File FileName="Assets\Generator.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
