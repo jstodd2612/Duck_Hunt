@@ -6,14 +6,19 @@ public class shots : MonoBehaviour {
 	
 	//public List<GameObject> bullets = new List<GameObject>();
 	public GameObject shotOn;
-
+	public GameObject[] guiDuck;
+	//public static GameObject[] (string "duckGUIhit");
 
 	void Start(){
 		//Physics.IgnoreCollision();
-		//bullets.Add(new GameObject(GameObject.FindGameObjectsWithTag("bullets");));
-		//shotOn = GameObject.FindGameObjectWithTag ("shotOn");
-	}
 
+		//if (guiDuck == null)
+			guiDuck = GameObject.FindGameObjectsWithTag ("duckGUIhit");
+
+		Debug.Log ("Gui duck 1: " + guiDuck [0]);
+		Debug.Log ("Gui duck 2: " + guiDuck [1]);
+
+	}
 	void OnMouseDown(){
 		if (StaticVars.bullets > 0 && StaticVars.duckIsDead != true) { 
 			StaticVars.bullets = StaticVars.bullets - 1;
@@ -33,6 +38,13 @@ public class shots : MonoBehaviour {
 						GameObject.FindWithTag ("shotOn").SetActive (false);
 			}
 		}
+
+
+	public void DuckGUIHit (){
+		//guiDuck[0] = GameObject.SetActive(false);
+		//guiDuck.Remove;
+		}
+
 
 	void Update(){
 
