@@ -51,7 +51,10 @@
      <Compile Include="Assets\BirdKill.cs" />
      <Compile Include="Assets\BirdScript.cs" />
      <Compile Include="Assets\DieFall.cs" />
+     <Compile Include="Assets\DogReset.cs" />
      <Compile Include="Assets\DogScript.cs" />
+     <Compile Include="Assets\DogSide.cs" />
+     <Compile Include="Assets\DogUp.cs" />
      <Compile Include="Assets\DoggyScript.cs" />
      <Compile Include="Assets\Generate.cs" />
      <Compile Include="Assets\ScoreScript.cs" />

@@ -8,17 +8,9 @@
 		public int score;
 		public Text scoreText;
 		
-		void Start() {
-			StaticVars.gameScore = 0;
-		}
-		
-		void OnMouseDown () {
-			UpdateScore ();
-		}
-		
-		void UpdateScore () {
-			StaticVars.gameScore += 10;
-			scoreText.text = "Score"  + StaticVars.gameScore;
-		}
+	void Update () {
+		scoreText.text = "Score:" + StaticVars.gameScore;
+
+	}
 	}
 	
