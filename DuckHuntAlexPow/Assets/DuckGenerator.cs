@@ -3,9 +3,26 @@ using System.Collections;
 
 public class DuckGenerator : MonoBehaviour
 {
+	//thoughts on random location generate: y value at 0 or 1, x value in vector 2 is random number between -10 and 10 (or whatever the camera is currently set at
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //random generate ducks - romrell's script: 
+
 	// 
+	/*
 	public float nextTime = 2;
 	public float currentTime = 0;
 	//current time stays at zero
@@ -29,6 +46,7 @@ public class DuckGenerator : MonoBehaviour
 		}
 
 	}
+	*/
 }
 
 /*romrell other script: 

@@ -7,11 +7,13 @@ public class DuckDies : MonoBehaviour {
 	void OnMouseDown () {
 
 		rigidbody2D.gravityScale = duckNewGravity; 
+		StaticVars.gameScore++;
 
 		}
 
 	void OnTriggerEnter2D (Collider2D other) {
 		Destroy (gameObject);
+		//either disable duck fly script, or destroy duck fly script here. so it will enable gravity
 
 	}
 	
