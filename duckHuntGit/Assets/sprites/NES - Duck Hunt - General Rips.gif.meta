@@ -9,6 +9,17 @@ TextureImporter:
     21300008: bullet2
     21300010: bullet3
     21300012: shotOn
+    21300014: DuckStartGUI
+    21300016: DuckGUIHit1
+    21300018: DuckGUIHit3
+    21300020: DuckGUIHit2
+    21300022: DuckGUIHit4
+    21300024: DuckGUIHit5
+    21300026: DuckGUIHit6
+    21300028: DuckGUIHit7
+    21300030: DuckGUIHit8
+    21300032: DuckGUIHit9
+    21300034: DuckGUIHit10
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -107,6 +118,116 @@ TextureImporter:
         y: 2
         width: 26
         height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DuckStartGUI
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 21
+        width: 113
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DuckGUIHit1
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 9
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DuckGUIHit3
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 9
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DuckGUIHit2
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 9
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DuckGUIHit4
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 9
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DuckGUIHit5
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 9
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DuckGUIHit6
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 9
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DuckGUIHit7
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 9
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DuckGUIHit8
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 9
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DuckGUIHit9
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 9
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DuckGUIHit10
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 9
+        width: 8
+        height: 10
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
