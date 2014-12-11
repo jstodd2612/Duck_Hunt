@@ -1,12 +1,20 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/BirdScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ScoreScript.cs">
     <Files>
-      <File FileName="Assets/BirdScript.cs" Line="32" Column="22" />
+      <File FileName="Assets/ScoreScript.cs" Line="23" Column="3" />
+      <File FileName="Assets/DogScript.cs" Line="13" Column="41" />
+      <File FileName="Assets/BirdKill.cs" Line="10" Column="26" />
+      <File FileName="Assets/DieFall.cs" Line="17" Column="1" />
+      <File FileName="Assets/StaticVars.cs" Line="7" Column="32" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True" selected="True" />
+        <State expanded="True">
+          <Node name="Assembly-CSharp" expanded="True">
+            <Node name="ScoreScript.cs" selected="True" />
+          </Node>
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

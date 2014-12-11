@@ -3,13 +3,7 @@ using System.Collections;
 
 public class StaticVars : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+	public static int gameScore = 0;
+	public static int bullets = 3;
+
 }

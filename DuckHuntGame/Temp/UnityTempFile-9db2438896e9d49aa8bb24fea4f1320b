@@ -39,6 +39,11 @@
 -define:ENABLE_PROFILER
 -define:UNITY_EDITOR
 -define:UNITY_EDITOR_OSX
+'Assets/BirdFall.cs'
+'Assets/BirdFly.cs'
+'Assets/BirdKill.cs'
 'Assets/BirdScript.cs'
+'Assets/DieFall.cs'
+'Assets/StaticVars.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Xml.Linq.dll'
