@@ -3,8 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class shots : MonoBehaviour {
-
-	static public int gunshots = 3;
+	
 	//public List<GameObject> bullets = new List<GameObject>();
 	public GameObject shotOn;
 
@@ -27,9 +26,9 @@ public class shots : MonoBehaviour {
 	public void BulletSprites (){
 				if (StaticVars.bullets == 2) {
 						GameObject.FindWithTag ("bullet1").SetActive (false);
-				} else if (gunshots == 1) {
+				} else if (StaticVars.bullets == 1) {
 						GameObject.FindWithTag ("bullet2").SetActive (false);
-				} else if (gunshots == 0) {
+				} else if (StaticVars.bullets == 0) {
 						GameObject.FindWithTag ("bullet3").SetActive (false);
 						GameObject.FindWithTag ("shotOn").SetActive (false);
 			}
