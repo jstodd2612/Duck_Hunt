@@ -33,6 +33,8 @@ public class killDuck : MonoBehaviour {
 		StaticVars.duckIsDead = true;
 		anim.SetBool("isDead", true);
 
+		shots.BulletSprites ();
+
 
 	}
 

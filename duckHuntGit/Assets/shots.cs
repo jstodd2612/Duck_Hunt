@@ -23,7 +23,7 @@ public class shots : MonoBehaviour {
 		}
 
 	}
-	public void BulletSprites (){
+	static public void BulletSprites (){
 				if (StaticVars.bullets == 2) {
 						GameObject.FindWithTag ("bullet1").SetActive (false);
 				} else if (StaticVars.bullets == 1) {
