@@ -10,6 +10,5 @@ static public class StaticVars
 	public static int ducksKilled = 0;
 	public static bool duckIsDead = false;
 	public static int bullets = 3;
-
+	public static List<string> guiDuck;
 }
-

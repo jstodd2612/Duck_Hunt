@@ -13,7 +13,6 @@ public class DogPositioning : MonoBehaviour
 	
 	static public float positionDog()
 	{
-		Debug.Log ("positionDog():  Catch Dog Positioned");
 		//If Duck falls in the tree area
 		if(killDuck.duckPosition < 0){
 			if(killDuck.duckPosition < treeCenter && killDuck.duckPosition > treeLeft){
@@ -33,7 +32,6 @@ public class DogPositioning : MonoBehaviour
 				return bushRight;
 			}
 		}
-		Debug.Log("positionDog() line 38 No correction needed for position;");
 		return killDuck.duckPosition;
 	}
 }

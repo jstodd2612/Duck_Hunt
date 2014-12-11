@@ -12,7 +12,6 @@ public class Generator : MonoBehaviour
 	void Start ()
 	{
 		CreateDuck ();
-		Debug.Log ("Generator.Start: generated duck");
 	}
 	
 	// Update is called once per frame

@@ -3,21 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class shots : MonoBehaviour {
-	
-	//public List<GameObject> bullets = new List<GameObject>();
+
 	public GameObject shotOn;
-	public GameObject[] guiDuck;
-
-
+	
 	void Start(){
 		//Physics.IgnoreCollision();
-			guiDuck = GameObject.FindGameObjectsWithTag ("duckGUIhit");
 	}
 	void OnMouseDown(){
 		if (StaticVars.bullets > 0 && StaticVars.duckIsDead != true) { 
 			StaticVars.bullets = StaticVars.bullets - 1;
 			BulletSprites();
-			DuckGUIHit();
 		}
 
 	}
@@ -31,13 +26,6 @@ public class shots : MonoBehaviour {
 						GameObject.FindWithTag ("shotOn").SetActive (false);
 			}
 		}
-
-
-	public void DuckGUIHit (){
-		guiDuck[0].SetActive(false);
-		//guiDuck.Remove;
-		}
-
 
 	void Update(){
 

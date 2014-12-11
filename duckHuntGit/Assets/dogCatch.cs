@@ -34,6 +34,5 @@ public class dogCatch : MonoBehaviour
 	public void moveDogCatch(){
 		position = DogPositioning.positionDog();
 		dogPositionCatch.transform.position = new Vector2 (position, -2.8f);
-		Debug.Log ("moveDogCatch() in dogCatch line 38, moved dog");
 	}
 }

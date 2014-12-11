@@ -9,23 +9,26 @@ public class killDuck : MonoBehaviour {
 	static public float duckPosition = 0.0f;
 	static public GameObject dogPositionCatch;
 	private bool duckKilled = false;
+	
+
 
 	void Start()
 	{
 		dogPositionCatch = GameObject.FindWithTag ("dogCatchTag");
 		anim = GetComponent<Animator>();
 		anim.SetBool("isDead", false);
+		Debug.Log ("killDuck Start() :" + StaticVars.ducksKilled + "GUI Duck 0" + StaticVars.guiDuck[0]);
+		//if (StaticVars.ducksKilled == 0)
+	//		StaticVars.guiDuck = GameObject.FindGameObjectsWithTag ("duckGUIhit");
 	}
 
-	void OnMouseDown()
+	public virtual void OnMouseDown()
 	{
-		if (StaticVars.duckIsDead != true) {
+		if (StaticVars.duckIsDead != true)
 			StaticVars.gameScore = StaticVars.gameScore +  Constants.scoreIncrease;
-		}
 
-		if (StaticVars.bullets > 0 && StaticVars.duckIsDead != true) { 
+		if (StaticVars.bullets > 0 && StaticVars.duckIsDead != true)
 			StaticVars.bullets = StaticVars.bullets - 1;
-		}
 
 		duckPosition = duckMovement.duck.transform.position.x;
 		dogCatch.myDog.moveDogCatch();
@@ -35,6 +38,8 @@ public class killDuck : MonoBehaviour {
 
 		shots.BulletSprites ();
 
+//		StaticVars.guiDuck[StaticVars.ducksKilled].SetActive(false);
+		StaticVars.ducksKilled++;
 
 	}
 
@@ -70,11 +75,5 @@ public class killDuck : MonoBehaviour {
 		}
 	}
 
-	/*
-	void OnDestroy(){
-		//position = DogPositioning.positionDog();
-		dogCatch.dogPositionCatch.transform.Translate(new Vector2(DogPositioning.positionDog(), 1.85f) * Time.deltaTime);
-		Debug.Log ("AM I destroyed");
-	}
-	*/
+
 }
