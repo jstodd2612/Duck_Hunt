@@ -7,6 +7,6 @@ public class doghappy : MonoBehaviour {
 	public Animator dogAnims;
 
 	void OnTriggerEnter2D () {
-		dogAnims. SetBool ("BirdHit", true);
+		dogAnims.SetBool ("BirdHit", true);
 	}
 }
