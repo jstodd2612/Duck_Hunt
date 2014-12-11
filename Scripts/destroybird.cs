@@ -17,7 +17,7 @@ public class destroybird : MonoBehaviour {
 	void OnMouseDown () {
 		//Debug.Log ("work");
 		//Destroy (gameObject);
-		score += 10;
+		score += 1;
 		UpdateScore ();
 		Bird.SetActive (false);
 	}
