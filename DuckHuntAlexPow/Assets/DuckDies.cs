@@ -2,15 +2,16 @@
 using System.Collections;
 
 public class DuckDies : MonoBehaviour {
-
+	public float duckNewGravity = 5f;
 	//when clicked, enable rigid body gravity so duck falls to hit bottom collider
 	void OnMouseDown () {
-		rigidbody2D.WakeUp(); 
+
+		rigidbody2D.gravityScale = duckNewGravity; 
 
 		}
 
-	void OnTriggerEnter () {
-		Destroy (this.gameObject);
+	void OnTriggerEnter2D (Collider2D other) {
+		Destroy (gameObject);
 
 	}
 	

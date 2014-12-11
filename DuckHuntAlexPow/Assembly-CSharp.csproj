@@ -48,7 +48,11 @@
   <ItemGroup>
      <Compile Include="Assets\DuckDies.cs" />
      <Compile Include="Assets\DuckFlies.cs" />
+     <Compile Include="Assets\DuckGenerator.cs" />
+     <Compile Include="Assets\DuckNew.cs" />
      <Compile Include="Assets\KeepScore.cs" />
+     <Compile Include="Assets\bullets.cs" />
+     <Compile Include="Assets\dogmoving.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>
