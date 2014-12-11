@@ -33,5 +33,9 @@ public class DogPositioning : MonoBehaviour
 			}
 		}
 		return killDuck.duckPosition;
+
+
 	}
+
+
 }
