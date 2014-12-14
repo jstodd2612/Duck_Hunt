@@ -13,9 +13,8 @@ public class DuckControl : MonoBehaviour {
 	// Update is called once per frame
 	void NextDuck () {
 		if (StaticVars.ducksKilled < allDucks.Length) {
-						allDucks [StaticVars.ducksKilled].color = Color.red;
-						
-				} 
+			allDucks [StaticVars.ducksKilled].color = Color.red;
+		} 
 		StaticVars.ducksKilled++;
 	}
 }

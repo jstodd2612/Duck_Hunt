@@ -24,8 +24,12 @@ public class duckMovement : MonoBehaviour {
 	}
 
 	void Update(){
-		if (StaticVars.duckIsDead == false)
-			randomMovement();
+		if (StaticVars.duckIsDead == false) 
+		{
+			randomMovement ();
+			//duck.gameObject.rigidbody.useGravity = true;
+
+		}
 		/*else {
 			transform.Translate(new Vector3(Xrandom, -2.0f, 0.0f) * Time.deltaTime);
 		}*/
@@ -47,5 +51,7 @@ public class duckMovement : MonoBehaviour {
 			Yrandom = 10;
 			flyAwayBanner.SetActive(true);
 		}
+
+			
 	}
 }

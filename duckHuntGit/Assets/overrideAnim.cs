@@ -9,13 +9,13 @@ public class overrideAnim : MonoBehaviour {
 	public void OnTriggerEnter (Collider baseCollider)
 	{
 		
-		Vector3 vect = new Vector3 ();
+		/*Vector3 vect = new Vector3 ();
 		Vector3 newVect = baseCollider.ClosestPointOnBounds (vect);
 		newVect.y = 0;
 		
 		dogLeash.transform.position = newVect;
 		
-		dogAnim.SetBool("duckIsDead", true);
+		dogAnim.SetBool("duckIsDead", true);*/
 		
 		
 	}

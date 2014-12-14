@@ -9,20 +9,15 @@ public class killDuck : MonoBehaviour {
 	static public float duckPosition = 0.0f;
 	static public GameObject dogPositionCatch;
 	private bool duckKilled = false;
-	
-
 
 	void Start()
 	{
 		dogPositionCatch = GameObject.FindWithTag ("dogCatchTag");
 		anim = GetComponent<Animator>();
 		anim.SetBool("isDead", false);
-		Debug.Log ("killDuck Start() :" + StaticVars.ducksKilled + "GUI Duck 0" + StaticVars.guiDuck[0]);
-		//if (StaticVars.ducksKilled == 0)
-	//		StaticVars.guiDuck = GameObject.FindGameObjectsWithTag ("duckGUIhit");
 	}
 
-	public virtual void OnMouseDown()
+	public void OnMouseDown()
 	{
 		if (StaticVars.duckIsDead != true)
 			StaticVars.gameScore = StaticVars.gameScore +  Constants.scoreIncrease;
@@ -36,11 +31,8 @@ public class killDuck : MonoBehaviour {
 		StaticVars.duckIsDead = true;
 		anim.SetBool("isDead", true);
 
+		duckMovement.duck.rigidbody.useGravity = true;
 		shots.BulletSprites ();
-
-//		StaticVars.guiDuck[StaticVars.ducksKilled].SetActive(false);
-		StaticVars.ducksKilled++;
-
 	}
 
 	void resetStage()
@@ -53,7 +45,7 @@ public class killDuck : MonoBehaviour {
 		//Debug.Log("Fly away.");
 	}
 
-	void OnCollisionEnter2D(Collision2D coll){
+	void OnCollisionEnter(Collider coll){
 		try{
 			if (coll.gameObject.tag == "baseCollider") {
 				duckKilled = true;
