@@ -6,7 +6,7 @@ public class DuckControl : MonoBehaviour {
 
 	public SpriteRenderer[] allDucks;
 	// Use this for initialization
-	void TriggerEnter (){
+	void OnTriggerEnter (){
 		NextDuck ();
 	}
 	
