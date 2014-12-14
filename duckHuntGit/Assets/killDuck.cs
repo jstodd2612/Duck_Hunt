@@ -45,8 +45,8 @@ public class killDuck : MonoBehaviour {
 		//Debug.Log("Fly away.");
 	}
 
-	void OnCollisionEnter(Collider coll){
-		try{
+	void OnTriggerEnter(Collider coll){
+
 			if (coll.gameObject.tag == "baseCollider") {
 				duckKilled = true;
 				duckMovement.duck.SetActive(false);
@@ -60,11 +60,6 @@ public class killDuck : MonoBehaviour {
 				LoadMyGameLevel.Timer(duckKilled);
 			}
 
-		}
-		catch (UnityException e)
-		{
-			Debug.Log("Error: " + e.Message);
-		}
 	}
 
 
