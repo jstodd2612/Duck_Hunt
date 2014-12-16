@@ -1,13 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\UpdateScore.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\General\EndDuckPlus.cs">
     <Files>
-      <File FileName="Assets\scripts\UpdateDucks.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\UpdateScore.cs" Line="16" Column="1" />
-      <File FileName="Assets\scripts\UpdateAmmo.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\StaticVars.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\FallDeath.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\GeneratorCl.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\General\EndDuck.cs" Line="15" Column="36" />
+      <File FileName="Assets\scripts\General\LoadNewLevel.cs" Line="9" Column="39" />
+      <File FileName="Assets\scripts\General\GeneratorCl.cs" Line="3" Column="1" />
+      <File FileName="Assets\scripts\General\GenerateClPlus.cs" Line="15" Column="11" />
+      <File FileName="Assets\scripts\General\EndDuckPlus.cs" Line="9" Column="33" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -7,15 +7,15 @@ public class GeneratorCl : MonoBehaviour {
 
 	public GameObject newDuck;
 
+	public virtual void GenerateDuck() {
+		Object.Instantiate (newDuck);
+	}
+
 	void Update() {
 		if (currentTime <= Time.time) {
 			currentTime = Time.time + nextTime;
-			Object.Instantiate(newDuck);
+			GenerateDuck();
 		}
-		/* if (currentTime >= 10.0f) {
-			nextTime = 0;
-			Time.timeScale = 0.0f;
-		} */
 
 	}
 
