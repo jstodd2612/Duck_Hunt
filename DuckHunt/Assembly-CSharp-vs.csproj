@@ -46,15 +46,20 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\C#\Score.cs" />
-     <Compile Include="Assets\C#\StaticVars.cs" />
-     <Compile Include="Assets\C#\birkill.cs" />
-     <Compile Include="Assets\C#\diefall.cs" />
-     <Compile Include="Assets\C#\generate.cs" />
+     <Compile Include="Assets\Score.cs" />
+     <Compile Include="Assets\StaticVars.cs" />
+     <Compile Include="Assets\birkill.cs" />
+     <Compile Include="Assets\bullets.cs" />
+     <Compile Include="Assets\bulletsminus.cs" />
      <Compile Include="Assets\destroybird.cs" />
+     <Compile Include="Assets\diefall.cs" />
      <Compile Include="Assets\direction.cs" />
      <Compile Include="Assets\dog.cs" />
+     <Compile Include="Assets\dogmock.cs" />
+     <Compile Include="Assets\dogreset.cs" />
      <Compile Include="Assets\fall.cs" />
+     <Compile Include="Assets\instantiate.cs" />
+     <Compile Include="Assets\resetdog.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>

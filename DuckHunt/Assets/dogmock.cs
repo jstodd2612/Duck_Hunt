@@ -1,13 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class dog : MonoBehaviour {
+public class dogmock : MonoBehaviour {
 
-	public GameObject DogObject;
+	public GameObject dogObject;
 	public Animator dogAnims;
 
 	void OnTriggerEnter2D () {	
-		dogAnims.SetBool ("Hit", true);
+		dogAnims.SetBool ("Miss", true);
 	}
 }
-

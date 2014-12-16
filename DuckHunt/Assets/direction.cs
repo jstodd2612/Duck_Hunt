@@ -3,20 +3,26 @@ using System.Collections;
 
 public class direction : MonoBehaviour 
 {
-
-	public float speed = .03f;
-	public bool birddirection = false;
+	public float speed = .05f;
+	public bool birdfly = true;
 	
 	void Start () {
-		birddirection = (Random.value < .5);
+		ResetDirection ();
 	}
 	
 	void Update () {
-		if (birddirection) {
+		if (birdfly) {
 			transform.position += new Vector3 (speed, speed);
-		} 
-		else{
+		} else {
 			transform.position += new Vector3 (speed * -1, speed);
 		}
+	}
+	
+	void OnTriggerEnter2D () {
+		ResetDirection ();
+	}
+	
+	void ResetDirection () {
+		birdfly = (Random.value < .5);
 	}
 }

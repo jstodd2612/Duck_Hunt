@@ -1,15 +1,21 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/C#/Score.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/dogreset.cs">
     <Files>
-      <File FileName="Assets/dog.cs" Line="6" Column="1" />
-      <File FileName="Assets/C#/birkill.cs" Line="13" Column="2" />
-      <File FileName="Assets/C#/diefall.cs" Line="16" Column="1" />
-      <File FileName="Assets/C#/generate.cs" Line="1" Column="1" />
-      <File FileName="Assets/C#/Score.cs" Line="23" Column="2" />
-      <File FileName="Assets/C#/StaticVars.cs" Line="1" Column="1" />
-      <File FileName="Assets/destroybird.cs" Line="1" Column="1" />
+      <File FileName="Assets/dog.cs" Line="10" Column="25" />
+      <File FileName="Assets/Score.cs" Line="1" Column="1" />
       <File FileName="Assets/direction.cs" Line="1" Column="1" />
+      <File FileName="Assets/destroybird.cs" Line="1" Column="1" />
+      <File FileName="Assets/fall.cs" Line="1" Column="1" />
+      <File FileName="Assets/dogmock.cs" Line="10" Column="26" />
+      <File FileName="Assets/bullets.cs" Line="1" Column="1" />
+      <File FileName="Assets/instantiate.cs" Line="9" Column="8" />
+      <File FileName="Assets/bulletsminus.cs" Line="1" Column="1" />
+      <File FileName="Assets/diefall.cs" Line="1" Column="1" />
+      <File FileName="Assets/StaticVars.cs" Line="1" Column="1" />
+      <File FileName="Assets/resetdog.cs" Line="10" Column="25" />
+      <File FileName="Assets/birkill.cs" Line="1" Column="1" />
+      <File FileName="Assets/dogreset.cs" Line="10" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
