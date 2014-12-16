@@ -35,4 +35,9 @@ public class dogCatch : MonoBehaviour
 		position = DogPositioning.positionDog();
 		dogPositionCatch.transform.position = new Vector2 (position, -2.8f);
 	}
+
+	public void LoadGameLevel(){
+		LoadMyGameLevel.myLevel.initializeNewLevel ();
+
+	}
 }

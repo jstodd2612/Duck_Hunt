@@ -22,4 +22,7 @@ public class dogLaugh : MonoBehaviour
 
 	}
 
+	public void LoadGameLevel(){
+		LoadMyGameLevel.myLevel.initializeNewLevel ();
+	}
 }

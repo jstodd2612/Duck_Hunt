@@ -19,20 +19,22 @@ public class killDuck : MonoBehaviour {
 
 	public void OnMouseDown()
 	{
-		if (StaticVars.duckIsDead != true)
-			StaticVars.gameScore = StaticVars.gameScore +  Constants.scoreIncrease;
+		if (StaticVars.bullets != 0) {
+			if (StaticVars.duckIsDead != true)
+					StaticVars.gameScore = StaticVars.gameScore + Constants.scoreIncrease;
 
-		if (StaticVars.bullets > 0 && StaticVars.duckIsDead != true)
-			StaticVars.bullets = StaticVars.bullets - 1;
+			if (StaticVars.bullets > 0 && StaticVars.duckIsDead != true)
+					StaticVars.bullets = StaticVars.bullets - 1;
 
-		duckPosition = duckMovement.duck.transform.position.x;
-		dogCatch.myDog.moveDogCatch();
+			duckPosition = duckMovement.duck.transform.position.x;
+			dogCatch.myDog.moveDogCatch ();
 
-		StaticVars.duckIsDead = true;
-		anim.SetBool("isDead", true);
+			StaticVars.duckIsDead = true;
+			anim.SetBool ("isDead", true);
 
-		duckMovement.duck.rigidbody.useGravity = true;
-		shots.BulletSprites ();
+			duckMovement.duck.rigidbody.useGravity = true;
+			shots.BulletSprites ();
+		}
 	}
 
 	void resetStage()
@@ -52,12 +54,10 @@ public class killDuck : MonoBehaviour {
 				duckMovement.duck.SetActive(false);
 				dogCatch.myDog.runDogCatchAnim();
 				Debug.Log ("Message: Duck Collision");
-				LoadMyGameLevel.Timer(duckKilled);
 			}
 			if (coll.gameObject.tag == "topCollider") {
 				duckMovement.duck.SetActive(false);
 				dogLaugh.myLaughDog.animLaughDog.SetBool("duckFlyAway", true);
-				LoadMyGameLevel.Timer(duckKilled);
 			}
 
 	}
