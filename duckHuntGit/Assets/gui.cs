@@ -7,7 +7,7 @@ public class gui : MonoBehaviour {
 
 
 	void OnGUI() {
-
+		GUI.Box(new Rect (10, 10, 200, 25), "Round: " + StaticVars.round);
 		GUI.Box(new Rect (10, 40, 200, 25), "Score: " + StaticVars.gameScore);
 
 	}

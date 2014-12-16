@@ -12,18 +12,21 @@ public class LoadMyGameLevel : MonoBehaviour
 		LoadMyGameLevel.myLevel = this;
 	}
 
-	// Update is called once per frame
-	void Update ()
-	{
-
-	}
-
 	
 	public void initializeNewLevel() {
-		StaticVars.duckIsDead = false;
-		StaticVars.bullets = 3;
-		StaticVars.ducksGeneratedCount++;
-		Application.LoadLevel ("main_scene");
+		if (StaticVars.ducksGeneratedCount == 10) {
+			StaticVars.ducksKilled = 0;
+			StaticVars.round++;
+			StaticVars.duckIsDead = false;
+			StaticVars.bullets = 3;
+			StaticVars.ducksGeneratedCount = 0;
+			Application.LoadLevel ("main_scene");
+		} else {
+			StaticVars.duckIsDead = false;
+			StaticVars.bullets = 3;
+			StaticVars.ducksGeneratedCount++;
+			Application.LoadLevel ("main_scene");
+		}
 	}
 
 	void OnMouseUp () {

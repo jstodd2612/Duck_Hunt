@@ -11,9 +11,9 @@ public class duckMovement : MonoBehaviour {
 	public float Xmin = -3.8f;
 	public float Ymin = -1.6f;
 	public float Ymax = 3.0f;
-	public int moveSpeed = 1;
+	public int moveSpeed = 10;
 
-	private float firstDirection = 0.0f;
+	private float firstDirection = 4.0f;
 	private float Xrandom = Random.Range (-2.0f, 2.0f);
 	private float Yrandom = Random.Range (-2.0f, 2.0f);
 
@@ -27,7 +27,6 @@ public class duckMovement : MonoBehaviour {
 		if (StaticVars.duckIsDead == false) 
 		{
 			randomMovement ();
-			//duck.gameObject.rigidbody.useGravity = true;
 
 		}
 		/*else {

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 static public class StaticVars
 {
+	public static int round = 1;
 	public static int gameScore = 0;
 	public static List<bool> ducksGenerated = new List<bool>();
 	public static int ducksGeneratedCount = 0;
