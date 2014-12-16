@@ -13,6 +13,7 @@ public class killDuck : MonoBehaviour {
 	void Start(){
 		anim = GetComponent<Animator>();
 		anim.SetBool("isDead", false);
+		anim.SetBool ("restart", false);
 		//		GameObject duck = Instantiate(Resources.Load("duck_prefab")) as GameObject;
 	}
 
@@ -20,7 +21,7 @@ public class killDuck : MonoBehaviour {
 		isDead = true;
 		anim.SetBool("isDead", true);
 		ducksKilled = ducksKilled + 1;
-		score = score + 1;
+		score = score + 100;
 		shots.gunshots = 3;
 		dogMovement.dogCatch();
 		//dogState = 2;
@@ -31,7 +32,9 @@ public class killDuck : MonoBehaviour {
 	}
 	static public void reviveDuck(){
 		isDead = false;
-		anim.SetBool ("isDead", false);
+		anim.SetBool("isDead", false);
+		anim.SetBool ("restart", true);
+
 	}
 
 }
