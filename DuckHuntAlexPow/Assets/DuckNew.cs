@@ -10,7 +10,6 @@ public class DuckNew : MonoBehaviour {
 	public virtual void GenerateDuck ()
 	{
 		Object.Instantiate (newDuck);
-		StaticVars.bullets = 3;
 	}
 	
 	void Update () {

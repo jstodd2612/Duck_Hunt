@@ -1,12 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\StaticVars.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\dogmoving.cs">
     <Files>
-      <File FileName="Assets\KeepScore.cs" Line="7" Column="76" />
-      <File FileName="Assets\DuckNew.cs" Line="19" Column="20" />
-      <File FileName="Assets\bulletCount.cs" Line="10" Column="62" />
-      <File FileName="Assets\DuckDies.cs" Line="12" Column="3" />
-      <File FileName="Assets\StaticVars.cs" Line="9" Column="33" />
+      <File FileName="Assets\DuckNew.cs" Line="12" Column="32" />
+      <File FileName="Assets\KeepScore.cs" Line="6" Column="76" />
+      <File FileName="Assets\bulletCount.cs" Line="8" Column="3" />
+      <File FileName="Assets\StaticVars.cs" Line="5" Column="2" />
+      <File FileName="Assets\DuckFlies.cs" Line="17" Column="53" />
+      <File FileName="Assets\dogmoving.cs" Line="10" Column="35" />
+      <File FileName="Assets\topcollider.cs" Line="1" Column="1" />
+      <File FileName="Assets\bottomcollider.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
