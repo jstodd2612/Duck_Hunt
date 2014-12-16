@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class StaticVariables : MonoBehaviour
+public class StaticVars : MonoBehaviour
 {
 
 		

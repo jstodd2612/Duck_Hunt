@@ -3,15 +3,11 @@ using System.Collections;
 
 public class dogmoving : MonoBehaviour
 {
-
-	//collider2d
-	//ClosestPointOnBounds 
-	/*public override void ontriggerenter (collider _c)
-	 * {
-	 * base.ontriggerenter(_c)
-	 * 
-	 * 
-	 * }
-	 */
+	public Animator dogAnims;
+	
+	void ResetDog () {
+		dogAnims.SetBool ("miss", false);
+		dogAnims.SetBool ("hit", false);
+	}
 }
 
