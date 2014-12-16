@@ -50,6 +50,8 @@
      <Compile Include="Assets\BirdFly.cs" />
      <Compile Include="Assets\BirdKill.cs" />
      <Compile Include="Assets\BirdScript.cs" />
+     <Compile Include="Assets\Bullet.cs" />
+     <Compile Include="Assets\BulletMinus.cs" />
      <Compile Include="Assets\DieFall.cs" />
      <Compile Include="Assets\DogReset.cs" />
      <Compile Include="Assets\DogScript.cs" />
@@ -59,6 +61,7 @@
      <Compile Include="Assets\Generate.cs" />
      <Compile Include="Assets\ScoreScript.cs" />
      <Compile Include="Assets\StaticVars.cs" />
+     <Compile Include="Assets\YouWin.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>

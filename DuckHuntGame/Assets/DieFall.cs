@@ -8,11 +8,13 @@ public class DieFall : MonoBehaviour {
 	public Animator BirdAnim;
 
 	public void OnMouseDown () {
-		StaticVars.gameScore++;
-		FlyState.enabled = false;
-		FallState.enabled = true;
-		BirdAnim.enabled = false;
+				if (StaticVars.bullets > 0) {
+						StaticVars.gameScore++;
+						FlyState.enabled = false;
+						FallState.enabled = true;
+						BirdAnim.enabled = false;
+				}
+
 		}
-	
 
 }
