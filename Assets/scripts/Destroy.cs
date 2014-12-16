@@ -9,7 +9,7 @@ public class Destroy : MonoBehaviour {
 	public GameObject Bird;
 	
 	void Start() {
-		score = 0;
+		score = 5;
 		UpdateScore ();
 		
 	}

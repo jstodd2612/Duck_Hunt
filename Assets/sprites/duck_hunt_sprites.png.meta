@@ -1,11 +1,13 @@
 fileFormatVersion: 2
-guid: 9aa87609c68f67342a7dbae41e46f4a2
+guid: 66dff17273676444eb1c200c23183d91
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: duck_hunt_sprites_0
+    21300002: duck_hunt_sprites_1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -25,13 +27,13 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -42,6 +44,26 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: duck_hunt_sprites_0
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 418
+        width: 224
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: duck_hunt_sprites_1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 373
+        width: 206
+        height: 137
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 5, z: 0, w: 0}
   spritePackingTag: 
   userData: 
