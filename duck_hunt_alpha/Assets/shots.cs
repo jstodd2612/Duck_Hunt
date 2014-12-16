@@ -17,6 +17,8 @@ public class shots : MonoBehaviour {
 
 		if(gunshots <= 0){
 			killDuck.flyAway();
+			gunshots = 0;
+
 		}
 
 	}
