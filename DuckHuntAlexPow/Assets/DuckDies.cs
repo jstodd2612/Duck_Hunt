@@ -9,7 +9,6 @@ public class DuckDies : MonoBehaviour {
 
 		rigidbody2D.gravityScale = duckNewGravity; 
 		StaticVars.gameScore++;
-		StaticVars.bullets--;
 
 		}
 

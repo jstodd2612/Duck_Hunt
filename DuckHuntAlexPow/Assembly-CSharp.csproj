@@ -54,6 +54,7 @@
      <Compile Include="Assets\StaticVariables.cs" />
      <Compile Include="Assets\StaticVars.cs" />
      <Compile Include="Assets\bottomcollider.cs" />
+     <Compile Include="Assets\bulletCount.cs" />
      <Compile Include="Assets\bullets.cs" />
      <Compile Include="Assets\dogmoving.cs" />
      <Compile Include="Assets\topcollider.cs" />

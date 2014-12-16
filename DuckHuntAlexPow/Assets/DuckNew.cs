@@ -5,11 +5,12 @@ public class DuckNew : MonoBehaviour {
 
 	public float nextTime = 1;
 	public float currentTime = 0;
-	//public GameObject newDuck;
+	public GameObject newDuck;
 	
 	public virtual void GenerateDuck ()
 	{
-		//Object.Instantiate (newDuck);
+		Object.Instantiate (newDuck);
+		StaticVars.bullets = 3;
 	}
 	
 	void Update () {
