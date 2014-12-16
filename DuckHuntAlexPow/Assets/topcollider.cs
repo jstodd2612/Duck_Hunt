@@ -7,6 +7,6 @@ public class topcollider : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D duck) {
 		dogAnims.SetBool ("miss", true);
-		
+
 	}
 }
