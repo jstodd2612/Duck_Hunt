@@ -3,13 +3,8 @@ using System.Collections;
 
 public class StaticVars : MonoBehaviour {
 	public static int gameScore = 0;
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+	public static int bullets = 10;
+	public static int ducksKilled = 0;
+	public static int level = 1;
+	public static bool shouldSpawnNewDuck = false;
 }
